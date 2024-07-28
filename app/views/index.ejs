@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+    <img src="img/doggo.jpeg" alt="Cute Dog">
+    <h1><%= name %></h1>
+    <h2><%= header %></h2>
+    <ul>
+        <% definitions.forEach(function(definition) { %>
+            <li><strong><%= definition.name %></strong>: <%= definition.definition %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
